@@ -36,7 +36,7 @@ ifneq (,$(filter 4.4 4.9 4.14 4.19, $(TARGET_KERNEL_VERSION)))
     PRODUCT_COPY_FILES += \
         device/qcom/common/vendor/media/media_profiles.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles.xml
 
-    ifneq ($(call is-board-platform-in-list, sm6150 msmnile kona),true)
+    ifneq ($(call is-board-platform-in-list, sm6150 msmnile kona trinket),true)
         PRODUCT_ODM_PROPERTIES += \
             debug.stagefright.ccodec=0
     endif
