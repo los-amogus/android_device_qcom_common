@@ -13,6 +13,7 @@ from extract_utils_qti.module import ExtractUtilsQTIModule, QTIComponentType
 
 namespace_imports = [
     'hardware/qcom/display/gralloc',
+    'vendor/qcom/opensource/display-commonsys-intf',
 ]
 
 lib_fixups: lib_fixups_user_type = {

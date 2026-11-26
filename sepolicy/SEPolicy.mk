@@ -10,9 +10,11 @@ BOARD_VENDOR_SEPOLICY_DIRS += \
     $(COMMON_SEPOLICY_PATH)/generic/vendor/$(TARGET_SEPOLICY_DIR) \
     $(COMMON_SEPOLICY_PATH)/qva/vendor/$(TARGET_SEPOLICY_DIR)
 
+ifeq ($(TARGET_BOARD_PLATFORM),kona)
 ifneq (,$(filter userdebug eng, $(TARGET_BUILD_VARIANT)))
-    SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += \
+    BOARD_VENDOR_SEPOLICY_DIRS += \
         $(COMMON_SEPOLICY_PATH)/qva/vendor/test
+endif
 endif
 
 # Common system policies

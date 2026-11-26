@@ -821,6 +821,10 @@ KernelVersionA=${KernelVersionStr:0:1}
 KernelVersionB=${KernelVersionS%.*}
 
 function configure_zram_parameters() {
+    if [ "$(getprop ro.vendor.qti.config.zram)" == "false" ]; then
+        return
+    fi
+
     MemTotalStr=`cat /proc/meminfo | grep MemTotal`
     MemTotal=${MemTotalStr:16:8}
 

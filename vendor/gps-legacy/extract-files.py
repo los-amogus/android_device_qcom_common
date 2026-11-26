@@ -20,6 +20,7 @@ namespace_imports = [
     'vendor/qcom/common/vendor/display/5.4',
     'vendor/qcom/common/vendor/qseecomd-legacy',
     'vendor/qcom/common/vendor/qseecomd',
+    'vendor/qcom/opensource/gps/legacy',
 ]
 
 lib_fixups: lib_fixups_user_type = {
