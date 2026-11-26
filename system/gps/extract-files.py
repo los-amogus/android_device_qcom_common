@@ -21,6 +21,8 @@ namespace_imports = [
 blob_fixups: blob_fixups_user_type = {
     'system_ext/etc/init/vendor.qti.hardware.qccsyshal@1.2-service.rc': blob_fixup()
         .regex_replace('group misc system', 'group misc system\\n    interface vendor.qti.hardware.qccsyshal@1.2::IQccsyshal qccsyshal\\n    interface vendor.qti.hardware.qccsyshal@1.1::IQccsyshal qccsyshal\\n    interface vendor.qti.hardware.qccsyshal@1.0::IQccsyshal qccsyshal'),
+    'system_ext/lib64/vendor.qti.hardware.qccsyshal@1.2-halimpl.so': blob_fixup()
+        .replace_needed('libprotobuf-cpp-full.so', 'libprotobuf-cpp-full-21.7.so'),
 }  # fmt: skip
 
 module = ExtractUtilsQTIModule(

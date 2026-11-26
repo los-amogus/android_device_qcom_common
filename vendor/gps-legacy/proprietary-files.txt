@@ -38,7 +38,6 @@ vendor/lib64/libloc_ril_client.so;DISABLE_CHECKELF
 vendor/lib64/libloc_socket.so
 vendor/lib64/liblowi_client.so
 vendor/lib64/liblowi_wifihal.so
-vendor/lib64/libminksocket.so;DISABLE_CHECKELF
 vendor/lib64/libqcc_file_agent.so
 vendor/lib64/libqdma_file_agent.so
 vendor/lib64/libslimclient.so;DISABLE_CHECKELF
