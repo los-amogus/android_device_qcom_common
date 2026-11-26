@@ -16,10 +16,6 @@ endif
 # Inherit configuration from the HAL.
 $(call inherit-product-if-exists, hardware/qcom/media/product.mk)
 
-# Enable 64-bit mediaserver
-PRODUCT_VENDOR_PROPERTIES += \
-    ro.mediaserver.64b.enable=true
-
 # Packages
 PRODUCT_PACKAGES += \
     android.hardware.media.c2@1.2.vendor \
