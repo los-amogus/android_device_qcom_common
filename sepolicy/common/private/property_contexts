@@ -1,1 +1,2 @@
-vendor.camera.aux.packageexcludelist    u:object_r:camera2_extensions_prop:s0
+# Defined in device/lineage/sepolicy/common/private/property_contexts
+
